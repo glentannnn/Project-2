@@ -1,6 +1,7 @@
 .navbar {
   height: 5rem;
   background-color: #ef5350;
+  width: 100%;
 }
 
 .navbar nav {

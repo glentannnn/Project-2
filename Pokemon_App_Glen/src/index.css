@@ -20,3 +20,68 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.container {
+  background-color: whitesmoke;
+}
+
+.pokedex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  background-color: #dff0d8;
+  border-radius: 1rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.card img {
+  width: 50px;
+}
+
+.pokemon-info {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ability {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ability h3 {
+  margin: 10px;
+  background-color: #dff0d8;
+  color: black;
+  padding: 0.5rem;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 0.5px solid black;
+}
+
+.base-stat p {
+  margin: 0;
+}
