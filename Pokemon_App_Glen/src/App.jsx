@@ -7,7 +7,7 @@ const Page2 = React.lazy(() => import("./pages/Page2"));
 
 function App() {
   return (
-    <div className="container">
+    <div className="container-fluid">
       <Suspense fallback={<p>Loading...</p>}>
         <NavBar />
         <Routes>

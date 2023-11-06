@@ -1,15 +1,26 @@
 import React from "react";
 
-const Card = () => {
+const Card = (props) => {
   return (
     <>
-      <div className="card">
-        <img
-          src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png"
-          alt="Picture of Charmander"
-        />
-        <h5>Charmander</h5>
-      </div>
+      {props.pokeData.map((item, idx) => {
+        return (
+          <div
+            className="card"
+            key={idx}
+            onClick={() => {
+              props.setPokedex(item);
+            }}
+          >
+            <img
+              src={item.sprites.other.dream_world.front_default}
+              alt="Pictures of selected Pokemon"
+              key={item.id}
+            />
+            <h5>{item.name}</h5>
+          </div>
+        );
+      })}
     </>
   );
 };

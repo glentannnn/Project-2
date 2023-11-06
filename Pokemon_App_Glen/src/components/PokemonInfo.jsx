@@ -1,31 +1,46 @@
 import React from "react";
 
-const PokemonInfo = () => {
+const PokemonInfo = (props) => {
+  // console.log(props.pokedex);
   return (
-    <div className="pokemon-info">
-      <h5>Charmander</h5>
-      <img
-        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/4.svg"
-        alt="Picture of selected Pokemon"
-      />
-      <div className="ability">
-        <div>
-          <h3>Blaze</h3>
+    <>
+      {!props.pokedex ? (
+        <div className="default-info">
+          <img src="./public/pokeballIcon.png" />
+          <h5>Please select your Pokemon! Try clicking on any icon below.</h5>
         </div>
-        <div>
-          <h3>Solar Power</h3>
+      ) : (
+        <div className="pokemon-info">
+          <h5>{props.pokedex.name}</h5>
+          <img
+            src={props.pokedex.sprites.other.dream_world.front_default}
+            alt="Picture of selected Pokemon"
+          />
+          <div className="ability">
+            <div>
+              {props.pokedex.abilities.map((item) => {
+                return (
+                  <div>
+                    <h3>{item.ability.name}</h3>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+          <div className="base-stat">
+            <div>
+              {props.pokedex.stats.map((item) => {
+                return (
+                  <p>
+                    {item.stat.name}: {item.base_stat}
+                  </p>
+                );
+              })}
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div className="base-stat">
-        <p>HP: 39</p>
-        <p>Att: 52</p>
-        <p>Def: 43</p>
-        <p>Spc Att: 60</p>
-        <p>Spc Def: 50</p>
-        <p>Spd: 65</p>
-      </div>
-    </div>
+      )}
+    </>
   );
 };
 

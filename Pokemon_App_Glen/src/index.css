@@ -13,6 +13,10 @@ body {
   background-color: whitesmoke;
 }
 
+/* #root {
+  margin: 0;
+  padding: 0;
+} */
 .centered {
   margin: 3rem auto;
   text-align: center;
@@ -21,8 +25,10 @@ body {
   align-items: center;
 }
 
-.container {
+.container-fluid {
   background-color: whitesmoke;
+  padding: 0;
+  margin: 0;
 }
 
 .pokedex {
@@ -30,6 +36,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.pokedex h3 {
+  margin: 10px 10px;
 }
 
 .cards-section {
@@ -40,11 +50,12 @@ body {
 }
 
 .card {
-  width: 300px;
+  width: 250px;
+  height: 130px;
   background-color: #dff0d8;
   border-radius: 1rem;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
-  padding: 0 1.5rem;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -53,6 +64,7 @@ body {
 
 .card img {
   width: 50px;
+  margin: 20px 20px;
 }
 
 .pokemon-info {
@@ -62,8 +74,30 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-top: 1rem;
   margin-bottom: 1rem;
+  border: 0.5px solid black;
+  border-radius: 1rem;
+  padding: 10px;
+}
+
+.pokemon-info img {
+  width: 200px;
+}
+
+.default-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid black;
+  padding: 10px;
+  margin: 0 20px 20px 20px;
+  border-radius: 1rem;
+}
+
+.default-info img {
+  width: 150px;
+  margin: 10px;
 }
 
 .ability {
@@ -84,4 +118,8 @@ body {
 
 .base-stat p {
   margin: 0;
+}
+
+.buttons button {
+  margin: 10px;
 }
