@@ -8,10 +8,12 @@ const NavBar = () => {
       <nav>
         <ul>
           <li>
-            <NavLink to="/page1">Page 1</NavLink>
+            <img src="./public/pikachu.png" alt="Pikachu icon" />
+            <NavLink to="/page2">Welcome to the Pokédex App!</NavLink>
           </li>
           <li>
-            <NavLink to="/page2">Page 2</NavLink>
+            <img src="./public/pokedex.png" alt="Pokedex icon" />
+            <NavLink to="/page1">Pokédex</NavLink>
           </li>
         </ul>
       </nav>

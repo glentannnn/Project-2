@@ -16,22 +16,22 @@ const PokemonInfo = (props) => {
             src={props.pokedex.sprites.other.dream_world.front_default}
             alt="Picture of selected Pokemon"
           />
-          <div className="ability">
-            <div>
-              {props.pokedex.abilities.map((item) => {
+          <div>
+            <div className="ability">
+              {props.pokedex.abilities.map((item, idx) => {
                 return (
-                  <div>
+                  <div key={idx}>
                     <h3>{item.ability.name}</h3>
                   </div>
                 );
               })}
             </div>
           </div>
-          <div className="base-stat">
-            <div>
-              {props.pokedex.stats.map((item) => {
+          <div>
+            <div className="base-stat">
+              {props.pokedex.stats.map((item, idx) => {
                 return (
-                  <p>
+                  <p key={idx}>
                     {item.stat.name}: {item.base_stat}
                   </p>
                 );

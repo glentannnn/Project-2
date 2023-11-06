@@ -6,7 +6,7 @@ import PokemonInfo from "../components/PokemonInfo";
 const Page1 = () => {
   const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon/");
   const [nextUrl, setNextUrl] = useState();
-  const [preUrl, setPrevUrl] = useState();
+  const [prevUrl, setPrevUrl] = useState();
   const [pokeData, setPokeData] = useState([]);
   const [pokedex, setPokedex] = useState();
 
@@ -48,8 +48,20 @@ const Page1 = () => {
         <Card pokeData={pokeData} setPokedex={setPokedex} />
       </div>
       <div className="buttons">
-        <button onClick={getData}>Prev</button>
-        <button onClick={getData}>Next</button>
+        <button
+          onClick={() => {
+            setUrl(prevUrl);
+          }}
+        >
+          Prev
+        </button>
+        <button
+          onClick={() => {
+            setUrl(nextUrl);
+          }}
+        >
+          Next
+        </button>
       </div>
     </header>
   );

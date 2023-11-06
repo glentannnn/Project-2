@@ -60,11 +60,20 @@ body {
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
+  opacity: 1;
+}
+
+.card:hover {
+  opacity: 0.5;
 }
 
 .card img {
   width: 50px;
-  margin: 20px 20px;
+  margin: 20px 20px 0 20px;
+}
+
+.card h5 {
+  text-transform: capitalize;
 }
 
 .pokemon-info {
@@ -78,10 +87,20 @@ body {
   border: 0.5px solid black;
   border-radius: 1rem;
   padding: 10px;
+  background-color: #f5dd8c;
+}
+
+.pokemon-info h5 {
+  text-transform: capitalize;
 }
 
 .pokemon-info img {
   width: 200px;
+}
+
+.base-stat p {
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .default-info {
@@ -93,6 +112,7 @@ body {
   padding: 10px;
   margin: 0 20px 20px 20px;
   border-radius: 1rem;
+  background-color: #f5dd8c;
 }
 
 .default-info img {
@@ -114,6 +134,7 @@ body {
   font-size: 18px;
   border-radius: 8px;
   border: 0.5px solid black;
+  text-transform: capitalize;
 }
 
 .base-stat p {
@@ -121,5 +142,17 @@ body {
 }
 
 .buttons button {
-  margin: 10px;
+  margin: 40px 20px 100px 20px;
+  padding: 10px;
+  width: 150px;
+  border-radius: 1rem;
+  background-color: #b74c4d;
+  color: #feca1c;
+  border: 0.5px solid black;
+  box-shadow: 2px 2px 2px 2px #f5dd8c;
+  opacity: 1;
+}
+
+.buttons button:hover {
+  opacity: 0.5;
 }
