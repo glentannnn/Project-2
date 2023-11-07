@@ -23,7 +23,7 @@ const SearchBox = (props) => {
         alert("Please spell your Pokemon correctly!");
       }
     } catch (error) {
-      alert("Please spell your Pokemon correctly!");
+      alert("Please try again");
     }
   };
 
