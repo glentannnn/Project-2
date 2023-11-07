@@ -2,13 +2,17 @@ import React, { useRef } from "react";
 
 const SearchBox = (props) => {
   const nameRef = useRef();
-  //   console.log(nameRef.current.value);
-  //   const idRef = useRef();
+
+  const transformToLowerCase = (string) => {
+    return string.toLowerCase();
+  };
 
   const getPokemonViaName = async () => {
     try {
       const res = await fetch(
-        `https://pokeapi.co/api/v2/pokemon/${nameRef.current.value}`
+        `https://pokeapi.co/api/v2/pokemon/${transformToLowerCase(
+          nameRef.current.value
+        )}`
       );
       const data = await res.json();
 
@@ -27,7 +31,7 @@ const SearchBox = (props) => {
     <div className="search-box">
       <input
         className="col-md-8"
-        placeholder="Type the Pokemon name or ID here"
+        placeholder="Type the Pokemon Name or ID here"
         ref={nameRef}
       ></input>
       <button onClick={getPokemonViaName}>🔎</button>
