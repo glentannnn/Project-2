@@ -6,7 +6,7 @@ const Card = (props) => {
       {props.pokeData.map((item, idx) => {
         return (
           <div
-            className="card"
+            className="card col-md-3"
             key={idx}
             onClick={() => {
               props.setPokedex(item);

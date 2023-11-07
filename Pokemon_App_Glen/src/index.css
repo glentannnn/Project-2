@@ -38,8 +38,31 @@ body {
   align-items: center;
 }
 
-.pokedex h3 {
+/* .pokedex h3 {
   margin: 10px 10px;
+} */
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  margin: 20px;
+}
+
+.search-box input {
+  border-radius: 10px;
+}
+
+.search-box button {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  opacity: 1;
+}
+
+.search-box button:hover {
+  opacity: 0.5;
 }
 
 .cards-section {
@@ -50,8 +73,7 @@ body {
 }
 
 .card {
-  width: 250px;
-  height: 130px;
+  height: 150px;
   background-color: #dff0d8;
   border-radius: 1rem;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
@@ -132,7 +154,7 @@ body {
   color: black;
   padding: 0.5rem;
   font-size: 18px;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   border: 0.5px solid black;
   text-transform: capitalize;
 }
