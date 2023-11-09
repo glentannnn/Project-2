@@ -30,6 +30,7 @@ const SearchBox = (props) => {
   return (
     <div className="search-box">
       <input
+        key={props.pokeData.id}
         className="col-md-8"
         placeholder="Type the Pokemon Name or ID here"
         ref={nameRef}

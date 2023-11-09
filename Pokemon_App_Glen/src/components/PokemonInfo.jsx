@@ -7,17 +7,35 @@ const PokemonInfo = (props) => {
       {!props.pokedex ? (
         <div className="default-info">
           <img src="./public/pokeballIcon.png" />
-          <h5>Please select your Pokemon! Try clicking on any icon below.</h5>
+          <p>Please select your Pokemon! Try clicking on any icon below.</p>
         </div>
       ) : (
         <div className="pokemon-info">
-          <h5>{props.pokedex.name}</h5>
+          <h3>
+            {props.pokedex.name} (ID: {props.pokedex.id})
+          </h3>
+
           <img
             src={props.pokedex.sprites.other.dream_world.front_default}
-            alt="Picture of selected Pokemon"
+            alt="Picture of Pokemon"
           />
-          <div>
-            <div className="ability">
+
+          <div className="pokemon-type">
+            <h5> Type: </h5>
+            <div className="displayed-type">
+              {props.pokedex.types.map((item, idx) => {
+                return (
+                  <div key={idx}>
+                    <h3>{item.type.name}</h3>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          <div className="ability">
+            <h5> Abilities: </h5>
+            <div className="displayed-ability">
               {props.pokedex.abilities.map((item, idx) => {
                 return (
                   <div key={idx}>
@@ -27,6 +45,7 @@ const PokemonInfo = (props) => {
               })}
             </div>
           </div>
+
           <div>
             <div className="base-stat">
               {props.pokedex.stats.map((item, idx) => {

@@ -53,19 +53,10 @@ const Page1 = () => {
       {/* <h3>Search Your Pokemon Below</h3> */}
       <div className="black-bar"></div>
       <p> Input Pokemon Name Or Any Number From 1 to 1017. </p>
-      <SearchBox
-        url={url}
-        setUrl={setUrl}
-        setPokeData={setPokeData}
-        setPokedex={setPokedex}
-      />
-      <PokemonInfo pokedex={pokedex} />
+      <SearchBox setPokedex={setPokedex} pokeData={pokeData} />
+      <PokemonInfo pokedex={pokedex} pokedata={pokeData} />
       <div className="cards-section">
-        <Card
-          setPokedex={setPokedex}
-          setPokeData={setPokeData}
-          pokeData={pokeData}
-        />
+        <Card pokedex={pokedex} setPokedex={setPokedex} pokeData={pokeData} />
       </div>
       <div className="buttons">
         {prevUrl && (
