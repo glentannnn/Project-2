@@ -10,12 +10,12 @@ const Card = (props) => {
             key={idx}
             onClick={() => {
               props.setPokedex(item);
-              window.scrollTo({ top: 100, behaviour: "smooth" });
+              window.scrollTo({ top: 90, behaviour: "smooth" });
             }}
           >
             <img
               src={item.sprites.other.dream_world.front_default}
-              alt="Pictures of Selected Pokemon"
+              alt="Pictures of Selected Pokémon"
               key={item.id}
             />
             <h5>{item.name}</h5>

@@ -7,7 +7,7 @@ const PokemonInfo = (props) => {
       {!props.pokedex ? (
         <div className="default-info">
           <img src="./public/pokeballIcon.png" />
-          <p>Please select your Pokemon! Try clicking on any icon below.</p>
+          <p>Please select your Pokémon! Try clicking on any icon below.</p>
         </div>
       ) : (
         <div className="pokemon-info">
@@ -17,7 +17,7 @@ const PokemonInfo = (props) => {
 
           <img
             src={props.pokedex.sprites.other.dream_world.front_default}
-            alt="Picture of Pokemon"
+            alt="Picture of Pokémon"
           />
 
           <div className="pokemon-type">
