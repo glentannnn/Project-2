@@ -84,13 +84,15 @@ body {
 
 .card {
   height: 150px;
+  width: 250px;
   background-color: #dff0d8;
   border-radius: 1rem;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
   padding: 0;
+  margin: 5px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   box-sizing: border-box;
   opacity: 1;
 }

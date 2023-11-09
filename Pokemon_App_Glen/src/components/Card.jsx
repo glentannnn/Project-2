@@ -6,11 +6,12 @@ const Card = (props) => {
       {props.pokeData.map((item, idx) => {
         return (
           <div
-            className="card col-md-3"
+            className="card"
             key={idx}
             onClick={() => {
               props.setPokedex(item);
-              console.log(props.pokedex);
+              // console.log(props.pokedex);
+              window.scrollTo({ top: 100, behaviour: "smooth" });
             }}
           >
             <img
