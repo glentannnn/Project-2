@@ -110,6 +110,11 @@ body {
   text-transform: capitalize;
 }
 
+.pokedex-screen {
+  display: flex;
+  align-items: flex-start;
+}
+
 .pokemon-info {
   width: 50%;
   height: auto;
@@ -129,8 +134,13 @@ body {
   text-transform: capitalize;
 }
 
-.pokemon-info img {
+.pokemon-info-img {
   width: 200px;
+}
+
+.favourite-icon {
+  width: 30px;
+  margin: 0 30px;
 }
 
 .base-stat p {

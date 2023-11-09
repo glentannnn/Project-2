@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
 const PokemonInfo = (props) => {
+  const [isFavourite, setIsFavourite] = useState(false);
+  const [favPokemon, setFavPokemon] = useState([]);
+
+  let favouriteIcon = isFavourite ? "pokeballIcon.png" : "pokeball-empty.png";
+
+  const toggleFavourite = () => {
+    return setIsFavourite(!isFavourite);
+  };
+
   // console.log(props.pokedex);
   return (
     <>
@@ -15,10 +24,19 @@ const PokemonInfo = (props) => {
             {props.pokedex.name} (ID: {props.pokedex.id})
           </h3>
 
-          <img
-            src={props.pokedex.sprites.other.dream_world.front_default}
-            alt="Picture of Pokemon"
-          />
+          <div className="pokedex-screen">
+            <img
+              src={props.pokedex.sprites.other.dream_world.front_default}
+              alt="Picture of Pokemon"
+              className="pokemon-info-img"
+            />
+            <img
+              src={`./public/${favouriteIcon}`}
+              alt="Favourite Icon"
+              className="favourite-icon"
+              onClick={toggleFavourite}
+            ></img>
+          </div>
 
           <div className="pokemon-type">
             <h5> Type: </h5>

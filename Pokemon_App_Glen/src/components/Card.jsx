@@ -11,7 +11,7 @@ const Card = (props) => {
             onClick={() => {
               props.setPokedex(item);
               // console.log(props.pokedex);
-              window.scrollTo({ top: 100, behaviour: "smooth" });
+              window.scrollTo({ top: 90, behaviour: "smooth" });
             }}
           >
             <img
