@@ -12,7 +12,7 @@ html {
 body {
   margin: 0;
   background-color: whitesmoke;
-  font-family: "Oxygen", Arial, Helvetica, sans-serif;
+  font-family: "Pixelify Sans", Arial, Helvetica, sans-serif;
 }
 
 /* #root {
@@ -109,7 +109,7 @@ body {
 }
 
 .pokemon-info {
-  width: 60%;
+  width: 50%;
   height: auto;
   margin: auto;
   display: flex;
@@ -219,15 +219,15 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   width: minmax(100px, 800px);
   text-wrap: wrap;
 }
 
-.about-title {
+/* .about-title {
   text-align: center;
-}
+} */
 
-.about-body {
+/* .about-body {
   width: minmax(100px, 800px);
-}
+} */
