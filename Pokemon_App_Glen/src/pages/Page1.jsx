@@ -42,11 +42,11 @@ const Page1 = () => {
   };
 
   useEffect(() => {
-    console.log("useEffect");
+    // console.log("useEffect");
     getData();
   }, [url]);
 
-  console.log(pokeData.length);
+  // console.log(pokeData.length);
 
   return (
     <header className="pokedex">
