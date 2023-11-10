@@ -19,6 +19,7 @@ Further down the line, updates would be rendered to improved the App. The possib
 - Improvement to the UI of the App, specifically a dynamic background which changes accent colours depending on the Pokémon's colour. The Pokémon type component will also be improved to render a colour and symbol for easier identification of Pokémon type.
 - Drawing on more information from the API to increase the information rendered to user for a selected Pokémon i.e. Pokémon's evolution path, Pokémon's habitat in different maps on the game.
 - A comparison function to compare 2 or more Pokémons side by side.
+- Update images of all Pokémons.
 
 ## Screenshots of the App
 ![screenshot-1](Pokemon_App_Glen/screenshots/Screenshot-1.png)
