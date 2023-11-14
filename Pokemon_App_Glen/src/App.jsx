@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 
 const Page1 = React.lazy(() => import("./pages/Page1"));
 const Page2 = React.lazy(() => import("./pages/Page2"));
+const Page3 = React.lazy(() => import("./pages/Page3"));
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Navigate replace to="/page1" />}></Route>
           <Route path="/page1" element={<Page1 />}></Route>
           <Route path="/page2" element={<Page2 />}></Route>
+          <Route path="/page3" element={<Page3 />}></Route>
         </Routes>
       </Suspense>
     </div>
