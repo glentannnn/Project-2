@@ -15,10 +15,6 @@ const NavBar = () => {
             <img src="./public/pokedex.png" alt="Pokedex icon" />
             <NavLink to="/page1">Pokédex</NavLink>
           </li>
-          <li>
-            <img src="./public/pokedex.png" alt="Pokedex icon" />
-            <NavLink to="/page3">Favourite Pokémons</NavLink>
-          </li>
         </ul>
       </nav>
     </header>
