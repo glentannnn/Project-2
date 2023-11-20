@@ -20,7 +20,7 @@ const SearchBox = (props) => {
         props.setPokedex(data);
         nameRef.current.value = "";
       } else {
-        alert("Please spell your Pokemon correctly!");
+        alert("Please spell your Pokémon correctly!");
       }
     } catch (error) {
       alert("Please try again");
@@ -32,7 +32,7 @@ const SearchBox = (props) => {
       <input
         key={props.pokeData.id}
         className="col-md-8"
-        placeholder="Type the Pokemon Name or ID here"
+        placeholder="Type the Pokémon Name or ID here"
         ref={nameRef}
       ></input>
       <button onClick={getPokemonViaName}>🔎</button>

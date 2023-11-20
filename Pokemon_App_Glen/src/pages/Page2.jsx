@@ -48,7 +48,7 @@ const Page2 = () => {
           </div>
           <div className="about-body">
             <div>
-              This App taps on the data and information retrieved from the
+              This App taps on the data and information retrieved from the{" "}
               <a href="https://pokeapi.co/">PokeAPI</a> website. Many thanks to
               the team for their hardwork to create and maintain the database,
               without which this App would not be fully functional.

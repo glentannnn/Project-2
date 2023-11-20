@@ -16,7 +16,7 @@ const Card = (props) => {
           >
             <img
               src={item.sprites.other.dream_world.front_default}
-              alt="Pictures of Selected Pokemon"
+              alt="Pictures of Selected Pokémon"
               key={item.id}
             />
             <h5>{item.name}</h5>
