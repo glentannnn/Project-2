@@ -1,4 +1,4 @@
-# Project-2_Pokemon-App
+# Project 2: Pokemon App
 This App is essentially a "Pokédex", which by strict definition refers to:
 > ["An electronic device designed to catalogue and provide information regarding the various species of Pokémon featured in the Pokémon video game, anime and manga series."](https://poke-pikachu.fandom.com/wiki/Pok%C3%A9dex)
 
