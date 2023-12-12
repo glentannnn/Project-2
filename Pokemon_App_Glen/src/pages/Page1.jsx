@@ -50,8 +50,8 @@ const Page1 = () => {
 
   return (
     <header className="pokedex">
-      {/* <h3>Search Your Pokemon Below</h3> */}
       <div className="black-bar"></div>
+      {/* <h3>Search Your Pokemon Below</h3> */}
       <p> Input Pokémon Name Or Any Number From 1 to 1017. </p>
       <SearchBox setPokedex={setPokedex} pokeData={pokeData} />
       <PokemonInfo pokedex={pokedex} pokedata={pokeData} />
